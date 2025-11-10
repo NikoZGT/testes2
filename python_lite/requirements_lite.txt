@@ -1,0 +1,6 @@
+# Versão LITE - Apenas essenciais (SEM MetaTrader5!)
+pandas
+numpy
+scikit-learn
+joblib
+ta
