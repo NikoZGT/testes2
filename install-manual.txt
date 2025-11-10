@@ -1,0 +1,30 @@
+# Instalação Manual - Se o requirements.txt falhar
+
+# IMPORTANTE: Execute os comandos um por um
+
+# 1. Atualizar pip primeiro
+python -m pip install --upgrade pip
+
+# 2. Instalar MetaTrader5 (WINDOWS APENAS!)
+pip install MetaTrader5
+
+# 3. Instalar análise de dados
+pip install pandas
+pip install numpy
+
+# 4. Instalar Machine Learning
+pip install scikit-learn
+pip install joblib
+
+# 5. Instalar análise técnica
+pip install ta
+
+# 6. Instalar visualização (opcional, mas recomendado)
+pip install matplotlib
+pip install seaborn
+
+# 7. Instalar utils
+pip install python-dotenv
+
+# VERIFICAR INSTALAÇÃO
+# Execute: python check_dependencies.py

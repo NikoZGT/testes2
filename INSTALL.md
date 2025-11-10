@@ -74,6 +74,40 @@ python -m pip install --upgrade pip
 pip install --upgrade MetaTrader5
 ```
 
+### Erro: "Could not find a version that satisfies the requirement MetaTrader5"
+
+**Problema:** O MetaTrader5 só está disponível para Windows
+
+**Solução 1 - Verificar Sistema Operacional:**
+- MetaTrader5 Python só funciona no Windows
+- Se está no Linux/Mac, não é possível usar esta biblioteca
+- Alternativa: Use Wine no Linux ou VM Windows
+
+**Solução 2 - Instalar sem especificar versão:**
+```bash
+pip install MetaTrader5
+```
+
+**Solução 3 - Usar repositório alternativo (se disponível):**
+```bash
+pip install --index-url https://pypi.org/simple MetaTrader5
+```
+
+**Solução 4 - Instalar versão específica:**
+```bash
+# Tente versões diferentes
+pip install MetaTrader5==5.0.45
+pip install MetaTrader5==5.0.44
+pip install MetaTrader5==5.0.43
+```
+
+**Solução 5 - Verificar arquitetura do Python:**
+```bash
+python -c "import platform; print(platform.architecture())"
+```
+- Se mostrar 32-bit, instale Python 64-bit
+- MetaTrader5 requer Python 64-bit no Windows
+
 ### Erro: "pip não é reconhecido"
 
 **Solução:** Python não está no PATH
